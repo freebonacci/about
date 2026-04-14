@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ben Freeborn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text: #1c1c1a;
+      --muted: #555550;
+      --faint: #999990;
+      --bg: #faf9f7;
+      --link: #2a5db0;
+      --rule: #e2e0da;
+      --max: 640px;
+      --gap: 3.5rem;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 19px;
+      line-height: 1.78;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      border-bottom: 1px solid var(--rule);
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 100;
+    }
+
+    .nav-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .site-title {
+      font-family: 'EB Garamond', serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .site-title:hover { text-decoration: none; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.75rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.03em;
+      color: var(--muted);
+      text-decoration: none;
+    }
+    nav a:hover { color: var(--text); text-decoration: none; }
+
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.5rem 6rem;
+    }
+
+    #about { padding-top: var(--gap); }
+
+    .hero-photo {
+      width: 100%;
+      aspect-ratio: 16/7;
+      object-fit: cover;
+      object-position: center 40%;
+      border-radius: 2px;
+      display: block;
+      margin-bottom: 2rem;
+    }
+
+    .intro { margin-bottom: 1rem; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 1.5rem 0;
+    }
+
+    .explainer {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .questions {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .questions li {
+      position: relative;
+    }
+
+    .q {
+      color: var(--text);
+      cursor: default;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .q[data-tooltip]:hover {
+      border-bottom-color: var(--faint);
+    }
+
+    .q[data-tooltip]::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      left: 0;
+      top: calc(100% + 6px);
+      background: var(--text);
+      color: var(--bg);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+      line-height: 1.5;
+      padding: 0.5rem 0.75rem;
+      border-radius: 3px;
+      white-space: normal;
+      max-width: 320px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(4px);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      z-index: 10;
+    }
+
+    .q[data-tooltip]:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section {
+      margin-top: var(--gap);
+      padding-top: var(--gap);
+      border-top: 1px solid var(--rule);
+    }
+
+    h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 1.1rem;
+    }
+
+    p { margin-bottom: 1rem; }
+    p:last-child { margin-bottom: 0; }
+
+    strong { font-weight: 500; }
+
+    .contact-line {
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .contact-line:last-child { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="#" class="site-title">Ben Freeborn</a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="journey.html">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- About -->
+  <div id="about">
+    <img class="hero-photo" src="photo.jpg" alt="Ben Freeborn working at the microgreens farm in Samos, Greece" />
+
+    <p class="intro">Hi there, I'm Ben.</p>
+    <p>I believe deeply that we owe people in difficult situations better.</p>
+
+    <hr class="divider">
+
+    <h2>Live questions</h2>
+    <ul class="questions">
+      <li>
+        <span class="q" data-tooltip="I started From Seed to Shelter in 2025 to address poor diets in refugee camps.">"How do we ensure no refugee suffers from malnutrition in a new and unfamiliar environment?"</span>
+      </li>
+      <li>
+        <span class="q" data-tooltip="I'm building a recruitment start-up with Raidical Academy (supported by Triple A Ventures).">"How can we help the brightest people do meaningful work?"</span>
+      </li>
+      <li>
+        <span class="q" data-tooltip="I designed a card game which I am trying to get published (very unsuccessfully).">"How can I create space for more silly in the world?"</span>
+      </li>
+      <li>
+        <span class="q" data-tooltip="I am exploring ideas around 'Humanitarian M&A' & public-private partnerships in the humanitarian space.">"I wonder if there's a way to help the humanitarian space leverage more private-sector expertise."</span>
+      </li>
+    </ul>
+
+    <hr class="divider">
+
+    <h2>Former questions</h2>
+    <ul class="questions">
+      <li>
+        <span class="q" data-tooltip="I worked as a Strategy Associate at People's Courage International, designing pilot programs for climate-vulnerable communities.">"How could blended crop insurance be accessible to agricultural workers in Southeast Asia?"</span>
+      </li>
+      <li>
+        <span class="q" data-tooltip="I spent 9 months with Movement on the Ground leading a team building and repairing shelters in Moria Camp.">"How do we keep the roof of these tents from sinking?"</span>
+      </li>
+      <li>
+        <span class="q" data-tooltip="I served as an Infantry Officer in the Singapore Armed Forces, getting lost in the rainforest many (many) times.">"How do we get out of this jungle?"</span>
+      </li>
+      <li>
+        <span class="q" data-tooltip="I researched on migrant livelihoods in Kenya and Uganda for the Global Development Incubator.">"What are refugee skilling programs in East Africa missing?"</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Say hello</h2>
+    <p class="contact-line">ben [at] fromseedtoshelter [dot] com</p>
+    <p class="contact-line"><a href="https://www.linkedin.com/in/benjamin-freeborn-76650920b/" target="_blank">LinkedIn</a></p>
+  </section>
+
+</main>
+
+</body>
+</html>
