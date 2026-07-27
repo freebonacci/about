@@ -66,7 +66,9 @@
     nav ul {
       list-style: none;
       display: flex;
+      justify-content: flex-end;
       gap: 1.75rem;
+      row-gap: 0.35rem;
       flex-wrap: wrap;
     }
 
@@ -195,16 +197,21 @@
       margin-bottom: 0.5rem;
     }
     .contact-line:last-child { margin-bottom: 0; }
+
+    @media (max-width: 480px) {
+      .nav-inner { gap: 1rem; }
+      nav ul { gap: 1.25rem; row-gap: 0.35rem; }
+      :root { --gap: 2.5rem; }
+    }
   </style>
 </head>
 <body>
 
 <header>
   <div class="nav-inner">
-    <a href="#" class="site-title">Ben Freeborn</a>
+    <a href="index.html" class="site-title">Ben Freeborn</a>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
         <li><a href="journey.html">Journey</a></li>
         <li><a href="musings.html">Musings</a></li>
         <li><a href="#contact">Contact</a></li>

@@ -67,7 +67,9 @@
     nav ul {
       list-style: none;
       display: flex;
+      justify-content: flex-end;
       gap: 1.75rem;
+      row-gap: 0.35rem;
       flex-wrap: wrap;
     }
 
@@ -135,6 +137,12 @@
       font-size: 0.95rem;
       line-height: 1.65;
     }
+
+    @media (max-width: 480px) {
+      .nav-inner { gap: 1rem; }
+      nav ul { gap: 1.25rem; row-gap: 0.35rem; }
+      main { padding-top: 2.5rem; }
+    }
   </style>
 </head>
 <body>
@@ -144,7 +152,6 @@
     <a href="index.html" class="site-title">Ben Freeborn</a>
     <nav>
       <ul>
-        <li><a href="index.html#about">About</a></li>
         <li><a href="journey.html">Journey</a></li>
         <li><a href="musings.html" class="active">Musings</a></li>
         <li><a href="index.html#contact">Contact</a></li>
