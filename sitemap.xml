@@ -2,17 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://benfreeborn.com/</loc>
-    <lastmod>2026-07-27</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://benfreeborn.com/journey.html</loc>
-    <lastmod>2026-07-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://benfreeborn.com/writing.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://benfreeborn.com/musings.html</loc>
-    <lastmod>2026-07-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://benfreeborn.com/questions.html</loc>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://benfreeborn.com/fieldwork.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://benfreeborn.com/moria.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://benfreeborn.com/lost.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://benfreeborn.com/china-2024-january.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://benfreeborn.com/china-help-email.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://benfreeborn.com/indonesia-2024-november.html</loc>
+    <priority>0.6</priority>
   </url>
 </urlset>

@@ -41,7 +41,7 @@
       color: var(--text);
       font-family: 'EB Garamond', Georgia, serif;
       font-size: 19px;
-      line-height: 1.78;
+      line-height: 1.4;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -98,10 +98,8 @@
     main {
       max-width: var(--max);
       margin: 0 auto;
-      padding: 0 1.5rem 6rem;
+      padding: var(--gap) 1.5rem 6rem;
     }
-
-    #about { padding-top: var(--gap); }
 
     .hero-photo {
       width: 100%;
@@ -115,76 +113,34 @@
 
     .intro { margin-bottom: 1rem; }
 
-    .things-about {
-      list-style: disc;
-      padding-left: 1.3rem;
-      margin: 0.5rem 0 1rem;
-    }
-
-    .things-about li {
-      padding: 0.1rem 0;
-    }
-
     .divider {
       border: none;
       border-top: 1px solid var(--rule);
-      margin: 1.5rem 0;
-    }
-
-    .explainer {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin-bottom: 1.25rem;
+      margin: 1.75rem 0;
     }
 
     .questions {
       list-style: none;
       padding: 0;
+      margin-left: 1.5rem;
       display: grid;
-      gap: 0.75rem;
-    }
-
-    .questions li {
-      position: relative;
+      gap: 2.5rem;
+      margin-top: 1.5rem;
     }
 
     .q {
       color: var(--text);
-      cursor: default;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s;
+      margin-bottom: 0.35rem;
     }
 
-    .q[data-tooltip]:hover {
-      border-bottom-color: var(--faint);
+    .q-see {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.55;
     }
 
-    .q[data-tooltip]::after {
-      content: attr(data-tooltip);
-      position: absolute;
-      left: 0;
-      top: calc(100% + 6px);
-      background: var(--text);
-      color: var(--bg);
-      font-family: 'Inter', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 300;
-      letter-spacing: 0.02em;
-      line-height: 1.5;
-      padding: 0.5rem 0.75rem;
-      border-radius: 3px;
-      white-space: normal;
-      max-width: 320px;
-      opacity: 0;
-      pointer-events: none;
-      transform: translateY(4px);
-      transition: opacity 0.2s ease, transform 0.2s ease;
-      z-index: 10;
-    }
-
-    .q[data-tooltip]:hover::after {
-      opacity: 1;
-      transform: translateY(0);
+    .reach-out {
+      margin-top: 3rem;
     }
 
     section {
@@ -221,6 +177,7 @@
       .nav-inner { gap: 1rem; }
       nav ul { gap: 1.25rem; row-gap: 0.35rem; }
       :root { --gap: 2.5rem; }
+      .questions { gap: 2rem; }
     }
   </style>
   <script type="application/ld+json">
@@ -305,8 +262,8 @@
     <nav>
       <ul>
         <li><a href="journey.html">Journey</a></li>
-        <li><a href="musings.html">Musings</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="questions.html">Questions</a></li>
       </ul>
     </nav>
   </div>
@@ -314,77 +271,53 @@
 
 <main>
 
-  <!-- About -->
-  <div id="about">
-    <img class="hero-photo" src="photo.jpg" alt="Ben Freeborn working at the microgreens farm in Samos, Greece" />
+  <img class="hero-photo" src="photo.jpg" alt="Ben Freeborn working at the microgreens farm in Samos, Greece" />
 
-    <h1 class="intro">Hi there, I'm Ben.</h1>
-    <p>I want to build a world in which people flee to safety, not more vulnerability.</p>
-    <p>So far, I've:</p>
-    <ul class="things-about">
-      <li>Started a <a href="https://drive.google.com/file/d/1HiKT7T0bPAehhOc65B_rPWRrqNN12Tmt/view" target="_blank">microgreens farm</a> to address malnutrition in Zervou Refugee Camp.</li>
-      <li>Led a team building <a href="https://medium.com/@benfreeborn/goodbye-lesvos-47a522bc23d2" target="_blank">emergency shelters</a> in Moria Refugee Camp.</li>
-      <li>Served as an infantry officer.</li>
-      <li>Designed programs to protect smallholder farmers from climate shocks.</li>
-      <li>Attempted to publish a <a href="https://www.argumentativepeople.com/" target="_blank">card game</a> (unsuccessful! But ongoing).</li>
-    </ul>
-    <p>If you're reading this, feel free to <a href="#contact">reach out</a> to share ideas, or just to say hi!</p>
+  <h1 class="intro">Hi there, I'm Ben.</h1>
+  <p>I want to build a world in which people flee to safety, not more vulnerability.</p>
+  <p>If that resonates with you, don't be afraid to <a href="#contact">say hello</a>.</p>
 
-    <hr class="divider">
+  <hr class="divider">
 
-    <h2>Live questions</h2>
-    <ul class="questions">
-      <li>
-        <span class="q" data-tooltip="I started From Seed to Shelter in 2025 to address poor diets in refugee camps.">"How can we help refugees find safety, not vulnerability, in new environments?"</span>
-      </li>
-      <li>
-        <span class="q" data-tooltip="I moved to Nigeria to work with Taimaka in July 2026.">"Malnutrition is linked to half of all deaths in children under 5 — how can we bring this rate down?"</span>
-      </li>
-      <li>
-        <span class="q" data-tooltip="I am helping an AI start-up explore how their tool can make an impact in the humanitarian space.">"How can we use AI tools to improve humanitarian coordination and elevate community voices?"</span>
-      </li>
-      <li>
-        <span class="q" data-tooltip="And are we most fulfilled when we make 'bets' that try to live out our commitments?">"Do our commitments give life meaning? Do we make 'bets' in service of these?"</span>
-      </li>
-      <li>
-        <span class="q" data-tooltip="Why does everything seem to be about 'more'?">"Where does the notion of maximisation (profit, happiness) come from?"</span>
-      </li>
-    </ul>
+  <p>These are some questions I'm grappling with:</p>
 
-    <hr class="divider">
+  <ul class="questions">
+    <li>
+      <p class="q">"How can we help refugees access food that is healthy and reliable in camp settings?"</p>
+      <p class="q-see">see: <a href="https://fromseedtoshelter.com/" target="_blank" rel="noopener">From Seed to Shelter</a></p>
+    </li>
+    <li>
+      <p class="q">"Malnutrition is linked to half of all deaths in children under 5 &mdash; how can we bring this rate down?"</p>
+      <p class="q-see">see: <a href="https://taimaka.org/" target="_blank" rel="noopener">Taimaka</a></p>
+    </li>
+    <li>
+      <p class="q">"How can we use AI tools to improve humanitarian coordination and elevate community voices?"</p>
+      <p class="q-see">see: <a href="https://aresintelligence.ai/" target="_blank" rel="noopener">Ares Intelligence</a></p>
+    </li>
+    <li>
+      <p class="q">"How on earth does anyone publish a card game?"</p>
+      <p class="q-see">see: <a href="https://www.argumentativepeople.com/" target="_blank" rel="noopener">Argumentative People</a></p>
+    </li>
+    <li>
+      <p class="q">"Do our commitments give life meaning? Do we make 'bets' in service of these?"</p>
+    </li>
+    <li>
+      <p class="q">"Where does the notion of maximisation (profit, happiness) come from?"</p>
+    </li>
+    <li>
+      <p class="q">"Can we live comfortable lives when the world is so unequal? Is choosing not to patronising?"</p>
+    </li>
+  </ul>
 
-    <h2>Former questions</h2>
-    <ul class="questions">
-      <li>
-        <span class="q" data-tooltip="I worked as a Strategy Associate at People's Courage International, designing pilot programs for climate-vulnerable communities.">"How could blended crop insurance be accessible to agricultural workers in Southeast Asia?"</span>
-      </li>
-      <li>
-        <span class="q" data-tooltip="I spent 9 months with Movement on the Ground leading a team building and repairing shelters in Moria Camp.">"How do we keep the roof of these tents from sinking?"</span>
-      </li>
-      <li>
-        <span class="q" data-tooltip="I served as an Infantry Officer in the Singapore Armed Forces, getting lost in the rainforest many (many) times.">"How do we get out of this jungle?"</span>
-      </li>
-      <li>
-        <span class="q" data-tooltip="Almost 20% of all pre-harvest rice in Indonesia is consumed by rats — and climate change is making this worse. This was a big part of my work at PCI.">"How do we keep rats off the rice farms?"</span>
-      </li>
-      <li>
-        <span class="q" data-tooltip="My stint as a microgreens farmer with From Seed to Shelter meant I was always battling heat, water, mould, and rats.">"Why are my sunflower seeds always mouldy?"</span>
-      </li>
-      <li>
-        <span class="q" data-tooltip="I researched on migrant livelihoods in Kenya and Uganda for the Global Development Incubator.">"What are refugee skilling programs in East Africa missing?"</span>
-      </li>
-    </ul>
-  </div>
+  <p class="reach-out">If you'd like to help me figure out the answers to any of these questions, please don't hesitate to reach out.</p>
 
-  <!-- Contact -->
   <section id="contact">
     <h2>Say hello</h2>
     <p class="contact-line">ben [at] fromseedtoshelter [dot] com</p>
-    <p class="contact-line"><a href="https://www.linkedin.com/in/benjamin-freeborn-76650920b/" target="_blank">LinkedIn</a></p>
-    <p class="contact-line"><a href="https://calendar.app.google/F4rVv5QGijFkEAAh6" target="_blank">Book a chat</a></p>
-    <p style="margin-top: 2rem; color: var(--faint); font-size: 0.95rem; font-style: italic; line-height: 1.6;">Life is just a little opportunity for you during a few years to say, "I love you, too." —Henri J. M. Nouwen</p>
+    <p class="contact-line"><a href="https://www.linkedin.com/in/benjamin-freeborn-76650920b/" target="_blank" rel="noopener">LinkedIn</a></p>
+    <p class="contact-line"><a href="https://calendar.app.google/F4rVv5QGijFkEAAh6" target="_blank" rel="noopener">Book a chat</a></p>
+    <p style="margin-top: 2rem; color: var(--faint); font-size: 0.95rem; font-style: italic; line-height: 1.6;">Life is just a little opportunity for you during a few years to say, "I love you, too." &mdash;Henri J. M. Nouwen</p>
   </section>
-  
 
 </main>
 

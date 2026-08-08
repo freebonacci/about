@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing — Ben Freeborn</title>
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <meta name="description" content="Selected writings, fieldwork extracts, and musings by Ben Freeborn." />
+  <link rel="canonical" href="https://benfreeborn.com/writing.html" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text: #1c1c1a;
+      --muted: #555550;
+      --faint: #999990;
+      --bg: #faf9f7;
+      --link: #2a5db0;
+      --rule: #e2e0da;
+      --max: 640px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 19px;
+      line-height: 1.78;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      border-bottom: 1px solid var(--rule);
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 100;
+    }
+
+    .nav-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .site-title {
+      font-family: 'EB Garamond', serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .site-title:hover { text-decoration: none; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      gap: 1.75rem;
+      row-gap: 0.35rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.03em;
+      color: var(--muted);
+      text-decoration: none;
+    }
+    nav a:hover { color: var(--text); text-decoration: none; }
+    nav a.active { color: var(--text); }
+
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 6rem;
+    }
+
+    h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      color: var(--text);
+    }
+
+    p { margin-bottom: 1.25rem; }
+    p:last-child { margin-bottom: 0; }
+
+    ul.writing-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 2rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .musings-note {
+      font-weight: 500;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 480px) {
+      .nav-inner { gap: 1rem; }
+      nav ul { gap: 1.25rem; row-gap: 0.35rem; }
+      main { padding-top: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="site-title">Ben Freeborn</a>
+    <nav>
+      <ul>
+        <li><a href="journey.html">Journey</a></li>
+        <li><a href="writing.html" class="active">Writing</a></li>
+        <li><a href="questions.html">Questions</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Writing</h1>
+
+  <ul class="writing-list">
+    <li><a href="moria.html">Reflections from Moria Camp, 2020</a></li>
+    <li><a href="fieldwork.html">Extracts from fieldwork, 2024</a></li>
+    <li><a href="https://drive.google.com/file/d/1HiKT7T0bPAehhOc65B_rPWRrqNN12Tmt/view" target="_blank" rel="noopener">Microgreens Pilot Evaluation, 2025</a></li>
+    <li><a href="lost.html">Thoughts on being lost, 2026</a></li>
+  </ul>
+
+  <p class="musings-note">To read my more incomplete thoughts, read my <a href="musings.html">musings</a>.</p>
+</main>
+
+</body>
+</html>
