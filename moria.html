@@ -125,10 +125,16 @@
     strong { font-weight: 500; }
 
     .article-photo {
-      width: 100%;
+      width: 75%;
+      max-height: 450px;
+      object-fit: cover;
       display: block;
       margin: 1.75rem auto 0.5rem;
       border-radius: 2px;
+    }
+
+    @media (max-width: 480px) {
+      .article-photo { width: 100%; }
     }
 
     .grid-2 {
