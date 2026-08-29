@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Writing — Ben Freeborn</title>
+  <title>Poems — Ben Freeborn</title>
   <link rel="icon" href="/favicon.ico" sizes="32x32" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-  <meta name="description" content="Selected writings, fieldwork extracts, and musings by Ben Freeborn." />
-  <link rel="canonical" href="https://benfreeborn.com/writing.html" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <meta name="description" content="Poems by Ben Freeborn." />
+  <link rel="canonical" href="https://benfreeborn.com/poems.html" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -94,60 +94,31 @@
       padding: 3.5rem 1.5rem 6rem;
     }
 
-    h1 {
+    .poem {
+      margin-bottom: 3.5rem;
+    }
+    .poem:last-child { margin-bottom: 0; }
+
+    .poem h1 {
       font-family: 'EB Garamond', serif;
-      font-size: 1.5rem;
-      font-weight: 500;
-      margin-bottom: 2rem;
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      margin-bottom: 1.75rem;
       color: var(--text);
     }
 
-    h2 {
-      font-family: 'EB Garamond', serif;
-      font-size: 1rem;
-      font-weight: 500;
-      margin-top: 2.25rem;
-      margin-bottom: 0.75rem;
-      color: var(--text);
+    .stanza {
+      line-height: 1.65;
+      margin-bottom: 1.6rem;
     }
-
-    p { margin-bottom: 1.25rem; }
-    p:last-child { margin-bottom: 0; }
-
-    ul.writing-list {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 2rem;
-      display: grid;
-      gap: 1rem;
-    }
-
-    ul.newsletter-list {
-      list-style: disc;
-      padding-left: 1.5rem;
-      margin-bottom: 2rem;
-    }
-    ul.newsletter-list li {
-      margin-bottom: 0.6rem;
-    }
-    ul.newsletter-list li:last-child {
-      margin-bottom: 0;
-    }
-
-    .poems-link {
-      margin-top: 2rem;
-      margin-bottom: 0;
-    }
-
-    .musings-note {
-      font-weight: 500;
-      margin-top: 2rem;
-    }
+    .stanza:last-child { margin-bottom: 0; }
 
     @media (max-width: 480px) {
       .nav-inner { gap: 1rem; }
       nav ul { gap: 1.25rem; row-gap: 0.35rem; }
       main { padding-top: 2.5rem; }
+      body { font-size: 18px; }
     }
   </style>
 </head>
@@ -167,25 +138,32 @@
 </header>
 
 <main>
-  <h1>Writing</h1>
+  <article class="poem">
+    <h1>ugly fruit</h1>
 
-  <ul class="writing-list">
-    <li><a href="moria.html">Reflections from Moria Camp, 2020</a></li>
-    <li><a href="fieldwork.html">Extracts from fieldwork, 2024</a></li>
-    <li><a href="https://drive.google.com/file/d/1HiKT7T0bPAehhOc65B_rPWRrqNN12Tmt/view" target="_blank" rel="noopener">Microgreens Pilot Evaluation, 2025</a></li>
-    <li><a href="lost.html">Thoughts on being lost, 2026</a></li>
-  </ul>
+    <p class="stanza">
+      i want to live in a place with ugly fruit<br />
+      not the pretty stuff everyone likes but no one enjoys<br />
+      where oranges are just a little green<br />
+      and the potatoes still have dirt
+    </p>
 
-  <h2>Newsletter from Microgreens Pilot</h2>
-  <ul class="newsletter-list">
-    <li><a href="microgreens-july-2025.html">July 2025 Newsletter</a></li>
-    <li><a href="microgreens-august-2025.html">Aug 2025 Newsletter</a></li>
-    <li><a href="microgreens-september-2025.html">Sep 2025 Newsletter</a></li>
-  </ul>
+    <p class="stanza">
+      i want to live in a place where some roads stay unpaved<br />
+      and you can walk for miles without meeting a soul<br />
+      where on a bad day you can find a path to follow<br />
+      and the pine trees come alive in the wind
+    </p>
 
-  <p class="musings-note">For my more incomplete thoughts, see my <a href="musings.html">musings</a>.</p>
+    <p class="stanza">
+      i want to live in a place where the water is shared<br />
+      by fish and seaweed and urchins<br />
+      where i can scream into the sea with abandon<br />
+      and remember that i am but a drop in this beautiful world
+    </p>
 
-  <p class="poems-link"><a href="poems.html">Poems</a></p>
+    <p class="stanza">I want to live.</p>
+  </article>
 </main>
 
 </body>
