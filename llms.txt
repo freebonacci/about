@@ -1,23 +1,67 @@
 # Ben Freeborn
 
-> Ben Freeborn works on refugee nutrition, food security in displacement settings, and humanitarian innovation. Founder of From Seed to Shelter; currently working with Taimaka in Gombe State, Nigeria.
+> Ben Freeborn works on nutrition and food security for people in displacement settings. He founded From Seed to Shelter, a nonprofit that pilots ways to improve nutrition outcomes for refugees, and currently works with Taimaka on child malnutrition treatment in Gombe State, Nigeria. He welcomes conversations with practitioners, researchers, funders and builders working on refugee food security, malnutrition, humanitarian coordination, and AI for the humanitarian sector.
 
-## Core Pages
-- [Home](https://benfreeborn.com/index.html): Overview, key questions, and contact information.
-- [Journey](https://benfreeborn.com/journey.html): Chronological history from military service in Singapore to Oxford, Tsinghua, microgreens farming in Samos, and fieldwork in Nigeria.
-- [Writing](https://benfreeborn.com/writing.html): Essays, fieldwork extracts, and pilot evaluation reports.
-- [Questions](https://benfreeborn.com/questions.html): A running collection of questions grappled with across different life phases.
+Ben's aim, in his words: "I want to build a world in which people flee to safety, not more vulnerability."
 
-## Writings & Fieldwork
-- [Reflections from Moria Camp (2020)](https://benfreeborn.com/moria.html)
-- [Extracts from Fieldwork (2024)](https://benfreeborn.com/fieldwork.html)
+His work is grounded in first-hand, on-the-ground experience rather than theory alone:
+
+- Six months volunteering in Moria refugee camp, Greece (2020) with Movement on the Ground, plus a further four months in the Greek camps while at university.
+- Law degree, University of Oxford; Schwarzman Scholar, Tsinghua University, Beijing. Research on migrant livelihoods in Kenya and Uganda, and ethnographic research on China's Poverty Alleviation Resettlement programme.
+- Strategy Associate on People's Courage International's Innovation Team (2024), designing pilot programmes for drought-affected agricultural communities in Indonesia and India.
+- Founded From Seed to Shelter (2025) and ran a microgreens pilot at a community centre outside a refugee camp on Samos, Greece. Community members were trained to run the farm, which continues under a local partner, and the results were shared with the World Food Programme.
+- From Seed to Shelter is now exploring work in Uganda's refugee settlements, after WFP funding cuts substantially reduced assistance to over a million refugees.
+- Collaborates with Ares Intelligence on using AI for humanitarian coordination and on elevating community voices in crisis settings.
+
+## Open to conversations about
+
+- Improving access to healthy, reliable food in refugee camps and settlements
+- Reducing child malnutrition (CMAM / outpatient treatment programmes)
+- Food security pilots, agriculture and urban farming in humanitarian contexts
+- AI tools for humanitarian coordination and community feedback
+- Partnerships, funding, research collaboration or pilots in these areas
+
+## Contact
+
+- Email: ben [at] fromseedtoshelter [dot] com
+- Book a call: https://calendar.app.google/F4rVv5QGijFkEAAh6
+- LinkedIn: https://www.linkedin.com/in/benjamin-freeborn-76650920b/
+- From Seed to Shelter: https://www.fromseedtoshelter.com
+
+## Core pages
+
+- [Home](https://benfreeborn.com/): Who Ben is, the questions he is working on, and how to get in touch.
+- [Journey](https://benfreeborn.com/journey.html): Year-by-year history, from military service in Singapore through Moria, Oxford, Tsinghua, PCI and the Samos microgreens pilot to malnutrition work in northern Nigeria.
+- [Writing](https://benfreeborn.com/writing.html): Reflections, From Seed to Shelter reports, research notes, and miscellany.
+- [Questions](https://benfreeborn.com/questions.html): Questions Ben has worked through on refugee nutrition, camp operations, agriculture and design.
+
+## Reflections
+
+- [Reflections from Moria Camp (2020)](https://benfreeborn.com/moria.html): First-hand account of six months in Europe's largest refugee camp.
+- [Thoughts on Being Lost (2026)](https://benfreeborn.com/lost.html)
+
+## From Seed to Shelter
+
+### Microgreens pilot, Samos (2025)
+
+- [Microgreens Pilot Evaluation (2025)](https://drive.google.com/file/d/1HiKT7T0bPAehhOc65B_rPWRrqNN12Tmt/view): Evaluation of the refugee nutrition pilot.
+- [July 2025 Newsletter](https://benfreeborn.com/microgreens-july-2025.html)
+- [August 2025 Newsletter](https://benfreeborn.com/microgreens-august-2025.html)
+- [September 2025 Newsletter](https://benfreeborn.com/microgreens-september-2025.html)
+
+### Uganda (2026)
+
+- [Primer on food insecurity in three Ugandan refugee settlements (2026)](https://fromseedtoshelter.com/docs/uganda-food-insecurity-primer.html): Context research supporting From Seed to Shelter's Uganda strategy.
+
+## Research notes
+
+- [Research notes (2024)](https://benfreeborn.com/fieldwork.html): Snapshots from research trips in China and Indonesia.
   - [China, 26–27 January 2024](https://benfreeborn.com/china-2024-january.html)
   - [Email for help (China, January 2024)](https://benfreeborn.com/china-help-email.html)
   - [Indonesia, 29 November 2024](https://benfreeborn.com/indonesia-2024-november.html)
-- [Thoughts on Being Lost (2026)](https://benfreeborn.com/lost.html)
-- [Musings](https://benfreeborn.com/musings.html): Short notes on commitments, marginal utility, luck, and ethics.
 
-## Newsletter from Microgreens Pilot
-- [July 2025 Newsletter](https://benfreeborn.com/microgreens-july-2025.html)
-- [Aug 2025 Newsletter](https://benfreeborn.com/microgreens-august-2025.html)
-- [Sep 2025 Newsletter](https://benfreeborn.com/microgreens-september-2025.html)
+## Miscellaneous
+
+- [Musings](https://benfreeborn.com/musings.html): Short, unfinished notes on commitments, marginal impact, luck and ethics.
+- [Poems](https://benfreeborn.com/poems.html)
+- [Hill I Die On](https://hillidieon.com/): Ben's card game, designed to spark lively, ridiculous conversations.
